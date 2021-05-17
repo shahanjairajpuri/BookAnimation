@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.container{
+    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    transition: all 0.5s ease-in;
+    transform-style: preserve-3d;
+    min-height: 90vh;
+    width: 60rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.2),0px 0px 50px rgba(0,0,0,0.2); 
+   
+}
+.book{
+    min-height:35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.book img{
+    width:18rem;
+    z-index: 2;
+    transition:all 0.75s ease-out;
+}
+
+.circle{
+    width: 17em;
+    height: 17rem;
+    background: linear-gradient(to right top ,#bdc3c7,#2c3e50 );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.info{
+    position: absolute;
+    top: 40%;
+    left:10%;
+    width: 40%;
+}
+.info h1{
+    font-size: 3rem;
+    transition:all 0.75s ease-out;
+}
+.info h3{
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: rgb(58, 68, 68);
+    font-weight: lighter;
+
+}
+
+.topic{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.topic button {
+    padding: 0.5rem 1rem;
+    background: none;
+    margin:5px;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(184, 19, 19, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: grey;
+    outline: none;
+}
+ button.active{
+    background: rgb(73, 71, 71);
+    color: rgb(255, 255, 255);
+}
+
+.purchase{
+    margin-top: 2rem;
+}
+
+.purchase button{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: linear-gradient(to right top ,#EB5757,#000000);
+    color: white;
+    border-radius: 10px;
+   transition: all .5s ease-in ;
+    cursor: pointer;
+    border: none;
+    
+}
